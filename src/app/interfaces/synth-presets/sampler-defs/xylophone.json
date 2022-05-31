@@ -1,0 +1,13 @@
+{
+    "urls": {
+        "C7": "C7.[mp3|ogg]",
+        "G3": "G3.[mp3|ogg]",
+        "G4": "G4.[mp3|ogg]",
+        "G5": "G5.[mp3|ogg]",
+        "G6": "G6.[mp3|ogg]",
+        "C4": "C4.[mp3|ogg]",
+        "C5": "C5.[mp3|ogg]",
+        "C6": "C6.[mp3|ogg]"
+    },
+    "baseUrl": "/assets/samples/xylophone/"
+}

@@ -1,0 +1,15 @@
+{
+    "urls": {
+        "D2": "D2.[mp3|ogg]",
+        "D4": "D4.[mp3|ogg]",
+        "D#1": "Ds1.[mp3|ogg]",
+        "F2": "F2.[mp3|ogg]",
+        "F4": "F4.[mp3|ogg]",
+        "G1": "G1.[mp3|ogg]",
+        "A0": "A0.[mp3|ogg]",
+        "A2": "A2.[mp3|ogg]",
+        "C1": "C1.[mp3|ogg]",
+        "C3": "C3.[mp3|ogg]"
+    },
+    "baseUrl": "/assets/samples/french-horn/"
+}

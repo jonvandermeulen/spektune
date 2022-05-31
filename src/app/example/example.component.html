@@ -1,0 +1,137 @@
+<div [hidden]="!exampleObject">
+
+    <h1>{{ exampleObject?.name }}</h1>
+    <div class="row">
+        <div class="col-lg-10 row">
+            <div class="card col-md-8 col-lg-8">
+                <div class="card-body">
+                    <!-- <div [innerHtml]="exampleObject?.description" hidden></div> -->
+                    <div *ngIf="exampleObject?.id === 'eddy'">
+                    <p>This is a frozen moment in time - a transect across a beautiful swirling eddy off the coast of the Kamchatka
+                        Peninsula in the Western Bering Sea. Collected by the Moderate Resolution Imaging Spectroradiometer (<a
+                            href="https://terra.nasa.gov/about/terra-instruments/modis" target="_blank">MODIS</a>) onboard the Aqua
+                                satellite.</p>
+                    <ul>
+                        <li><code>rrs-443</code> - Double Bass - A-minor pentatonic (relative minor of C-maj), 02-04 octave</li>
+                        <li><code>rrs-547</code> - Harp - C-major pentatonic, 03-05 octave</li>
+                        <li><code>rrs-667</code> - Flute - C-major pentatonic, 04-06 octave</li>
+                    </ul>
+                    <b>From Ryan Vandermeulen:</b>
+                    <blockquote>Something kind of fun about the eddy: you can see that it is rotating clockwise in the image (thus it is an
+                        anticyclonic, or "warm core" eddy). Due to the effect of the Coriolis Force (i.e. the physical force imparted on the
+                        water by a spinning Earth), water sort of piles up in the middle when they turn clockwise, and the opposite happens
+                        when they spin counter clockwise (i.e. there is a shallow depression in sea surface height, by 10 cm or so).
+                        <br /><br />Analogous to weather patterns, water moves from areas of high pressure (or sea surface height) to areas
+                        of low pressure (sea surface height). If you imagine that you could roll a golf ball starting from the center of the
+                        eddy, it would "roll downhill", or towards the outer edge of the eddy, but because the Earth is spinning, the ball
+                        would move a little bit to the right (in the direction of rotation). All the particles of water are being pushed
+                        slightly to the right as the pressure gradient force (movement from high to low height) and the Coriolis force (spin
+                        of Earth) are balanced (this is called Geostrophic Balance).<br /><br />As I mentioned, it is spinning, and all the
+                        water is being pushed to the right, and those particles of water that were pushed right, they push the water beneath
+                        them a little to the right as well, and so forth, and thus, water continues to "pile up" in the middle, sustaining
+                        the forces of rotation. In addition, the pile up of surface water means that below the surface of the ocean, your
+                        access to deep sea nutrients is also being pushed down farther.<br /><br />Notice that the middle of the eddy is
+                        blue = less nutrients = less phytoplankton. The opposite happens when the rotation is counter-clockwise ("cold-core"
+                        eddy). In that case, as water is pushed to the right, it's not piling up, but moving outward, and since that water
+                        void needs to be replaced from somewhere, and it is essentially "pumped up" from the deeper, colder ocean, which is
+                        full of rich nutrients that facilitate phytoplankton growth</blockquote>
+                    </div>
+                    <div *ngIf="exampleObject?.id === 'queensland'">
+                    <p>This spectral reflectance data are extracted from a rolling 32-day average global image from MODIS-Aqua, and the
+                        averages are computed every 8-days, making for 48 images per year. <br /><br />The actual data that are extracted
+                        are actually the mean of a 10x10 box of 9 km resolution data (which equals a box of 8,
+                        100 km<sup>2</sup>), in order to help fill in gaps that may arise from cloud cover throughout the year. <a
+                            href="https://goo.gl/maps/JxmuUPfJDyNoZqDi7" target="_blank">The center location of that 10x10 box is -16.625,
+                            153.2917</a></p>
+                    <p>With so few data points used to express an entire year, we slowed this one down to around 20 BPM and used synth
+                        instruments with long, sweeping depth. You can really hear the how the seasons change (eg: listen to 0:45 - 1:30).
+                    </p>
+                    </div>
+                    <div *ngIf="exampleObject?.id === 'australia'">
+                        <p>A series of daily images captured by the Visual Infrared Imaging Radiometer Suite (<a
+                            href="https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/jpss-mission-and-2"
+                            target="_blank">VIIRS</a>), from August 1-31, 2016. </p>
+                        <p>Each 'beat' is a dotted-quarter note. Each track is offset from the next one by a 16th note, 
+                            leaving an 8th note 'rest' in between each row of data. The result is a kind of somber waltz.
+                        </p>
+                        <ul>
+                            <li><code>rrs410</code> and <code>rrs671</code> are Acoustic Guitar. They bookend each phrase.</li>
+                            <li><code>rrs443</code> is a Marimba, and <code>rrs551</code> is a Vibraphone. They are similar but distinct instruments, and they form the interior of each phrase.</li>
+                            <li><code>rrs486</code> is a thumping standup bass at the center of each phrase.</li>
+                        </ul>
+                    </div>
+                    <div *ngIf="exampleObject?.id === 'rio'">
+                        <p>The song is the same data set repeated four times. Each repetition, a different color takes center stage and performs a
+                        solo of sorts while the other colors provide background.</p>
+                    
+                        <p>In the first part, <span class="blue">blue light</span> (<code>Rrs-443</code> and <code>Rrs-469</code>) rapidly picks an acoustic guitar, while green light (harp) and red light (bass) provide a
+                        rhythmic backing.</p>
+                        
+                        <p>
+                            In the second part, blue takes a back seat and <span class="blue">red</span> (<code>Rrs-667</code>) takes its turn thumping out a bass solo.
+                        </p>
+                        
+                        <p>
+                            In the third part, (<code>Rrs-547</code> and <code>Rrs-555</code>) <span class="green">green</span> shines.
+                        </p>
+                        <p>
+                            The data set was rather large - over 200 data points for each measured wavelength of light (there are 10 - 4 blue, 3
+                            green, 3 red). We chose 2 blue, 2 green and 1 red - so about a thousand data points - it's too much to play all at once.
+                            When the instruments are in "background" mode, their data is averaged over 4 points. So in each repetition, they are
+                            playing the same part, but just with a much simpler data set spread over a narrower set of notes. When in "solo" mode,
+                            every data point is played and we open up the range of notes it can play.
+                        </p>
+                        <p>The result is a subjective interpretation of objective data. We did not manipulate the data in any way that is not 
+                            supported by science - Just like NASA uses data coming in from it's satellites to produce false-color images of the
+                            earth and space, to show us something our puny human eyeballs could never see.</p>
+                        <p>
+                            If the song sounds like it ends arbitrarily - like in the middle of something much bigger - that's because it
+                            is. It's based entirely off an arbitrary line drawn on a map... and the map goes on forever.
+                        </p>
+                    </div>
+                    <div *ngIf="exampleObject?.id === 'btc'">
+                        <p>This song is built from data of the price of Bitcoin from May 17, 2021 - May 17, 2022.</p>
+                        <ul>
+                            <li>Plucky ethereal synth is the price of BTC at close.</li>
+                            <li>Bassline is the absolute value of change - a kind of basic measure of volatility. If the price goes up or down
+                                significantly, the pitch of the bass rises.</li>
+                            <li>The babbling noisy thing in the background is volume of trade.</li>
+                            <li>The drum track is nothing but a preset - no relation to the data. (still working on finding a good way to do drum
+                            rhythms with data)</li>
+                        </ul>
+                    </div>
+                    <div class="row" *ngIf="exampleObject?.garageBand_ios || exampleObject?.garageBand_macos" style="margin-bottom: 10px;">
+                        <div class="col-md col-lg">&nbsp;</div>
+                        <div class="col-md col-lg"><strong>Garage Band files: (<a href="{{ exampleObject?.garageBand_ios }}">iOS</a>) (<a href="{{ exampleObject?.garageBand_macos }}">MacOS</a>)</strong></div>
+                        <div class="col-md col-lg">&nbsp;</div>
+                    </div>
+                    <div class="row" *ngIf="!exampleObject?.youtube">
+                        <div class="col-md col-lg">&nbsp;</div>
+                        <div class="col-md col-lg"><audio *ngIf="!exampleObject?.youtube" controls [src]="exampleObject?.song_url" type="audio/mp3"></audio></div>
+                        <div class="col-md col-lg">&nbsp;</div>
+                    </div>
+                    <div class="row" *ngIf="exampleObject?.youtube">
+                        <div class="col-md col-lg">&nbsp;</div>
+                        <div class="col-md col-lg">
+                            <iframe class="e2e-iframe-trusted-src" width="560" height="315" [src]="youtubeUrl" title="YouTube video player"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md col-lg">&nbsp;</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card col-md-4 col-lg-4">
+                <div class="card-body">
+                    <a [href]="exampleObject?.image" target="_blank"><img [src]="exampleObject?.image_thumb" /></a>
+                    <br />
+                    <br />
+                    <br />
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

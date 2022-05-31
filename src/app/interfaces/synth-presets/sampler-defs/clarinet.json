@@ -1,0 +1,16 @@
+{
+    "urls": {
+        "D3": "D3.[mp3|ogg]",
+        "D4": "D4.[mp3|ogg]",
+        "D5": "D5.[mp3|ogg]",
+        "F2": "F2.[mp3|ogg]",
+        "F3": "F3.[mp3|ogg]",
+        "F4": "F4.[mp3|ogg]",
+        "F#5": "Fs5.[mp3|ogg]",
+        "A#2": "As2.[mp3|ogg]",
+        "A#3": "As3.[mp3|ogg]",
+        "A#4": "As4.[mp3|ogg]",
+        "D2": "D2.[mp3|ogg]"
+    },
+    "baseUrl": "/assets/samples/clarinet/"
+}

@@ -1,0 +1,28 @@
+{
+    "urls": {
+        "C5": "C5.[mp3|ogg]",
+        "D2": "D2.[mp3|ogg]",
+        "D4": "D4.[mp3|ogg]",
+        "D6": "D6.[mp3|ogg]",
+        "D7": "D7.[mp3|ogg]",
+        "E1": "E1.[mp3|ogg]",
+        "E3": "E3.[mp3|ogg]",
+        "E5": "E5.[mp3|ogg]",
+        "F2": "F2.[mp3|ogg]",
+        "F4": "F4.[mp3|ogg]",
+        "F6": "F6.[mp3|ogg]",
+        "F7": "F7.[mp3|ogg]",
+        "G1": "G1.[mp3|ogg]",
+        "G3": "G3.[mp3|ogg]",
+        "G5": "G5.[mp3|ogg]",
+        "A2": "A2.[mp3|ogg]",
+        "A4": "A4.[mp3|ogg]",
+        "A6": "A6.[mp3|ogg]",
+        "B1": "B1.[mp3|ogg]",
+        "B3": "B3.[mp3|ogg]",
+        "B5": "B5.[mp3|ogg]",
+        "B6": "B6.[mp3|ogg]",
+        "C3": "C3.[mp3|ogg]"
+    },
+    "baseUrl": "/assets/samples/harp/"
+}

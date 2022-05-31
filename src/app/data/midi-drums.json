@@ -1,0 +1,242 @@
+[
+    {
+        "midiNote": 27,
+        "name": "High Q (GM2)"
+    },
+    {
+        "midiNote": 28,
+        "name": "Slap (GM2)"
+    },
+    {
+        "midiNote": 29,
+        "name": "Scratch Push (GM2)"
+    },
+    {
+        "midiNote": 30,
+        "name": "Scratch Pull (GM2)"
+    },
+    {
+        "midiNote": 31,
+        "name": "Sticks (GM2)"
+    },
+    {
+        "midiNote": 32,
+        "name": "Square Click (GM2)"
+    },
+    {
+        "midiNote": 33,
+        "name": "Metronome Click (GM2)"
+    },
+    {
+        "midiNote": 34,
+        "name": "Metronome Bell (GM2)"
+    },
+    {
+        "midiNote": 35,
+        "name": "Bass Drum 2"
+    },
+    {
+        "midiNote": 36,
+        "name": "Bass Drum 1"
+    },
+    {
+        "midiNote": 37,
+        "name": "Side Stick"
+    },
+    {
+        "midiNote": 38,
+        "name": "Snare Drum 1"
+    },
+    {
+        "midiNote": 39,
+        "name": "Hand Clap"
+    },
+    {
+        "midiNote": 40,
+        "name": "Snare Drum 2"
+    },
+    {
+        "midiNote": 41,
+        "name": "Low Tom 2"
+    },
+    {
+        "midiNote": 42,
+        "name": "Closed Hi-hat"
+    },
+    {
+        "midiNote": 43,
+        "name": "Low Tom 1"
+    },
+    {
+        "midiNote": 44,
+        "name": "Pedal Hi-hat"
+    },
+    {
+        "midiNote": 45,
+        "name": "Mid Tom 2"
+    },
+    {
+        "midiNote": 46,
+        "name": "Open Hi-hat"
+    },
+    {
+        "midiNote": 47,
+        "name": "Mid Tom 1"
+    },
+    {
+        "midiNote": 48,
+        "name": "High Tom 2"
+    },
+    {
+        "midiNote": 49,
+        "name": "Crash Cymbal 1"
+    },
+    {
+        "midiNote": 50,
+        "name": "High Tom 1"
+    },
+    {
+        "midiNote": 51,
+        "name": "Ride Cymbal 1"
+    },
+    {
+        "midiNote": 52,
+        "name": "Chinese Cymbal"
+    },
+    {
+        "midiNote": 53,
+        "name": "Ride Bell"
+    },
+    {
+        "midiNote": 54,
+        "name": "Tambourine"
+    },
+    {
+        "midiNote": 55,
+        "name": "Splash Cymbal"
+    },
+    {
+        "midiNote": 56,
+        "name": "Cowbell"
+    },
+    {
+        "midiNote": 57,
+        "name": "Crash Cymbal 2"
+    },
+    {
+        "midiNote": 58,
+        "name": "Vibra Slap"
+    },
+    {
+        "midiNote": 59,
+        "name": "Ride Cymbal 2"
+    },
+    {
+        "midiNote": 60,
+        "name": "High Bongo"
+    },
+    {
+        "midiNote": 61,
+        "name": "Low Bongo"
+    },
+    {
+        "midiNote": 62,
+        "name": "Mute High Conga"
+    },
+    {
+        "midiNote": 63,
+        "name": "Open High Conga"
+    },
+    {
+        "midiNote": 64,
+        "name": "Low Conga"
+    },
+    {
+        "midiNote": 65,
+        "name": "High Timbale"
+    },
+    {
+        "midiNote": 66,
+        "name": "Low Timbale"
+    },
+    {
+        "midiNote": 67,
+        "name": "High Agogo"
+    },
+    {
+        "midiNote": 68,
+        "name": "Low Agogo"
+    },
+    {
+        "midiNote": 69,
+        "name": "Cabasa"
+    },
+    {
+        "midiNote": 70,
+        "name": "Maracas"
+    },
+    {
+        "midiNote": 71,
+        "name": "Short Whistle"
+    },
+    {
+        "midiNote": 72,
+        "name": "Long Whistle"
+    },
+    {
+        "midiNote": 73,
+        "name": "Short Guiro"
+    },
+    {
+        "midiNote": 74,
+        "name": "Long Guiro"
+    },
+    {
+        "midiNote": 75,
+        "name": "Claves"
+    },
+    {
+        "midiNote": 76,
+        "name": "High Wood Block"
+    },
+    {
+        "midiNote": 77,
+        "name": "Low Wood Block"
+    },
+    {
+        "midiNote": 78,
+        "name": "Mute Cuica"
+    },
+    {
+        "midiNote": 79,
+        "name": "Open Cuica"
+    },
+    {
+        "midiNote": 80,
+        "name": "Mute Triangle"
+    },
+    {
+        "midiNote": 81,
+        "name": "Open Triangle"
+    },
+    {
+        "midiNote": 82,
+        "name": "Shaker (GM2)"
+    },
+    {
+        "midiNote": 83,
+        "name": "Jingle Bell (GM2)"
+    },
+    {
+        "midiNote": 84,
+        "name": "Belltree (GM2)"
+    },
+    {
+        "midiNote": 85,
+        "name": "Castanets (GM2)"
+    },
+    {
+        "midiNote": 87,
+        "name": "Open Surdo (GM2)"
+    }
+]

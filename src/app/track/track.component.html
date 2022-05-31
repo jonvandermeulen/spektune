@@ -1,0 +1,193 @@
+<div class="container-fluid track-component">
+    <form [formGroup]="trackForm" (ngSubmit)="update()">
+        <div class="row">
+            <div class="col-md-3 col-lg-3">
+                <div formGroupName="optionsForm">
+                    <label for="name">Track Name:&nbsp;</label>
+                    <br />
+                    <input type="text" class="form-control" formControlName="name" />
+                </div>
+                <div class="row" formGroupName="dataForm">
+                    <div>
+                        <label for="dataInput">Data <i class="fa fa-info-circle"
+                            tooltip="Data should be a single column of line-break-delimited numbers">&nbsp;</i></label><br />
+                        <textarea formControlName="dataInput" class="form-control dataInput"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-9">
+                <div class="row" formGroupName="optionsForm">
+                    <div class="col-md col-lg">
+                        <label for="midiInstrument" class="mytooltip tooltip-effect-1">Midi
+                            Instrument:&nbsp;<i class="fa fa-exclamation-triangle" tooltip="Experimental: Some DAWs may ignore this, choose something absurdly different, or - shockingly - actually use this instrument."></i></label>
+                        <br />
+                        <select formControlName="midiInstrument" class="form-select" style="width: auto;">
+                            <optgroup *ngFor="let group of midiInstrumentList" [label]="group.group">
+                                <option *ngFor="let instrument of group.instruments"
+                                    value="{{ instrument.instrumentId }}">
+                                    {{ instrument.instrumentId }} - {{ instrument.name }}</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="col-md col-lg">
+                        <label for="noteDuration">Note Duration:
+                            <i class="fa fa-info-circle" tooltip="Each data point will generate a note of this length.">&nbsp;</i>
+                        </label>
+                        <br />
+                        <select formControlName="noteDuration" class="form-select" style="width: auto;">
+                            <option *ngFor="let duration of durationDictionary" value="{{ duration.name }}">{{
+                                duration.name }} note</option>
+                        </select>
+                    </div>
+                    <div class="col-md col-lg">
+                        <label for="offset">Offset:&nbsp;
+                            <i class="fa fa-info-circle" tooltip="Causes the track to delay start for the specified duration.<br/><br />Useful for creating more dynamic instrument interactions">&nbsp;</i>
+                        </label>
+                        <br />
+                        <select formControlName="offset" class="form-select" style="width: auto;">
+                            <option value="0">None</option>
+                            <option *ngFor="let duration of durationDictionary" value="{{ duration.ticks }}">{{
+                                duration.name }} note</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" formGroupName="optionsForm">
+                    <div class="col-md-4 col-lg-4" hidden>
+                        <label for="Volume">Volume: &nbsp;<i class="fa fa-exclamation-triangle"
+                                tooltip="Experimental: you may not hear the results when previewing the track."></i></label>
+                        <br />
+                        <input type="number" formControlName="volume" min="0" max="127" class="form-control" style="width: 80px" />
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <label for="defaultVelocity">Velocity: &nbsp;<i class="fa fa-info-circle"
+                                tooltip="Indicates how hard the instrument should be played/plucked/struck. Values 0-127. <br /><br />
+                                <b>Note</b>: Setting the value too low will make the instrument nearly inaudible.
+                                <br /><br />
+                                <b>PRO TIP</b>: Add a modulation below to vary your velocity throughout the song.">&nbsp;</i>
+                                <i class="fa fa-exclamation-triangle"
+                                    tooltip="Experimental: you may not hear the results when previewing the track.">&nbsp;</i></label>
+                        <br />
+                        <input type="number" formControlName="defaultVelocity" min="0" max="127" class="form-control" style="width: 80px" />
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <label>
+                            <input type="checkbox" formControlName="sustain" value="true" />&nbsp;Sustain&nbsp;</label>
+                            <i class="fa fa-info-circle"
+                                tooltip="When checked, the 'pedal-down' signal will be on for the entire track, causing each note to play past it's duration. <br /> <br />Recommended for Harp and mallet instruments. <i>Not</i> recommended for strings/piano/synth or any instrument that does not have a reasonable decay.">&nbsp;</i>
+                            <i class="fa fa-exclamation-triangle" tooltip="Experimental: you may not hear the results when previewing the track."></i>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <label for="mergeLimit">Merge Repeating Notes:
+                            <i class="fa fa-info-circle"
+                                tooltip="Consecutive notes can be merged to create one note of longer duration.">&nbsp;</i>
+                        </label>
+                        <br />
+                        <select formControlName="mergeLimit" class="form-select" style="width: auto;">
+                            <option value="0">No limit</option>
+                            <option value="1">Do not merge</option>
+                            <option *ngFor="let limit of this.range(2,8)" value="{{ limit }}">{{ limit }}</option>
+                        </select>
+                    </div>
+                   
+                </div>
+
+                <br />
+                <div class="row" formGroupName="keyForm">
+                    <div class="col-md col-lg">
+                        <label for="keyScale">Key/Scale:&nbsp;</label>
+                        <br />
+                        <select formControlName="keyNote" (change)="keyChange()" class="form-select" style="width: auto;">
+                            <option *ngFor="let note of keyNoteList" value="{{ note }}">{{ note }}</option>
+                        </select>
+                        <select formControlName="keyScale" (change)="keyChange()" class="form-select" style="width: auto;">
+                            <option *ngFor="let scale of scaleDictionary" value="{{ scale.name }}">{{ scale.name }}
+                            </option>
+                        </select>
+                        <br />
+                        Scale Notes: {{keyScaleNotes?.notes.join(', ')}}
+                        <br />
+                        <label>
+                            <input type="checkbox" formControlName="useGlobal" (click)="keyChange()" value="true" />&nbsp;Use
+                            Global Key/Scale</label>
+                    </div>
+                    <div class="col-md col-lg">
+                        <label for="octaves">Octaves:&nbsp;</label>
+                        <br />
+                        <select formControlName="startOctave" (change)="octaveChange()" class="form-select" style="width: auto;">
+                            <option *ngFor="let octave of range(0,9)" value="{{ octave }}">{{ octave }}</option>
+                        </select> to
+                        <select required formControlName="endOctave" (change)="octaveChange()" class="form-select" style="width: auto;">
+                            <option *ngFor="let octave of range(0,9)" value="{{ octave }}">{{ octave }}</option>
+                        </select>
+                        <br />
+                        ({{notesCollection.length}}): {{notesCollection.join(', ')}}
+                        <span *ngFor="let note of notesCollection" class="noteSelector" hidden><label>{{ note }} <br/> <input type="checkbox" [id]="note" /></label></span>
+                    </div>
+                </div>
+                <div class="row" formGroupName="optionsForm" hidden>
+                    <div class="col-md col-lg">&nbsp;</div>
+                    <div class="col-md col-lg">
+                        <label for="restNotes">Rest Notes:&nbsp;<i class="fa fa-exclamation-triangle"
+                                tooltip="Experimental. <br /><br />The intent is to specify note(s) that would be replaced with a 'rest'. Useful if (for instance) you want the lowest note to be treated like 'no data'."
+                                title="Experimental"></i></label>
+                        <br />
+                        <input type="text" formControlName="restNotes" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div *ngFor="let t of model.modulationOptions; let i = index" @fade>
+            <app-track-modulation [model]="t" (removeModulationEventHandler)="removeTrackModulation($event, i)"></app-track-modulation>
+        </div>
+        <button type="button" class="btn btn-default btn-warning" (click)="addTrackModulation()"><i class="fa fa-plus"></i> Add
+            Modulation</button>
+        </div>
+        <div class="row">
+            <div class="col-md-11 col-lg-11">
+                <br />
+                <div class="row">
+                    <div class="col-md col-lg">
+                        <button type="button" class="btn btn-success" (click)="previewTrack()">
+                            <span [ngSwitch]="playerState">
+                                <b *ngSwitchCase="'stopped'"><i class="fa fa-play" style="width: auto;">&nbsp;</i>Play</b>
+                                <b *ngSwitchCase="'loading'"><i class="fa fa-stop" style="width: auto;">&nbsp;</i>Loading instrument...</b>
+                                <b *ngSwitchCase="'playing'"><i class="fa fa-stop" style="width: auto;">&nbsp;</i>Stop</b>
+                            </span>
+                        </button>
+                        &nbsp;
+                        <button type="button" class="btn btn-default" (click)="downloadJson()" hidden>
+                            <i class="fa fa-download" >&nbsp;</i>Download JSON</button>
+                        &nbsp;
+                        <button type="button" class="btn btn-default" (click)="downloadCSV()"
+                            tooltip="Comma-separated data file with: raw_data, normalized_data, pitch_name, pitch_midi, note_on">
+                            <i class="fa fa-download">&nbsp;</i>Download CSV</button>
+                        &nbsp;
+                        <button type="button" class="btn btn-default" (click)="downloadMidi()"
+                            tooltip="MIDI file containing this track only.">
+                            <i class="fa fa-download"></i>Download MIDI</button>
+                        &nbsp;&nbsp;
+                        <button type="button" class="btn-circle btn-delete" (click)="deleteTrack()" title="Delete Track"><i
+                                class="fa fa-trash" style="font-size: 19px;"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="form-group">
+            <label for="dataInput">Note Offset</label>
+            <input type="text" [ngModel]="offset" />
+            <select [(ngModel)]="offset" name="offset">
+                <option *ngFor="let duration of durationList" value="{{ duration.value }}">{{ duration.value }} : {{ duration.name }}</option>
+            </select>
+        </div> -->
+
+
+        <!-- <div class="form-group">
+        <label for="dataInput">Data as Notes</label>
+        <textarea [ngModel]="dataNotes" class="form-control" readonly
+            name="dataNotes">{{dataNotes.join(', ')}}</textarea>
+    </div> -->
+    </form>
+</div>

@@ -1,0 +1,2887 @@
+{
+    "name": "Australia",
+    "keyNote": "E",
+    "keyScale": "locrian pentatonic",
+    "tempo": 60,
+    "tracks": [
+        {
+            "name": "rrs410",
+            "key": {
+                "useGlobalKeyScale": true,
+                "globalKeyNote": "E",
+                "globalKeyScale": "locrian pentatonic",
+                "keyNote": "E",
+                "keyScale": "locrian pentatonic",
+                "startOctave": "2",
+                "endOctave": "5"
+            },
+            "options": {
+                "noteDuration": "dotted quarter",
+                "mergeLimit": "3",
+                "restNotes": "",
+                "offset": 0,
+                "sustain": false
+            },
+            "data": "0.002740105\n0.000425411\n0.001549348\n0.003375457\n0.002637479\n0.004388785\n0.004818432\n0.004818432\n0.00476108\n0.005959974\n0.00560386\n0.007218581\n0.005359257\n0.005657015\n0.006950751\n0.006387856\n0.005441579\n0.004109488\n0.003604073\n0.004754024\n0.00428606\n0.005233248\n0.003218531\n0.002708318\n0.003431021\n0.003204051\n0.00605686\n0.010213669\n0.010213669\n0.005689085\n0.005689085",
+            "noteData": [
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2364766028848034
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.002740105
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0
+                    ],
+                    "noteIndex": 0,
+                    "rawData": [
+                        0.000425411
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.11482502811021127
+                    ],
+                    "noteIndex": 2,
+                    "rawData": [
+                        0.001549348
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.301386211928619
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.003375457
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.225991999802212
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.002637479
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.4049110679346622
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.004388785
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.44880519087257414,
+                        0.44880519087257414
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.004818432,
+                        0.004818432
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.4429459256182255
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.00476108
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5654288025509749
+                    ],
+                    "noteIndex": 11,
+                    "rawData": [
+                        0.005959974
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.529047048003843
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.00560386
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6940121521112338
+                    ],
+                    "noteIndex": 13,
+                    "rawData": [
+                        0.007218581
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5040576167894226,
+                        0.5344775342047584
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.005359257,
+                        0.005657015
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6666497756802079
+                    ],
+                    "noteIndex": 13,
+                    "rawData": [
+                        0.006950751
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6091426073975574
+                    ],
+                    "noteIndex": 12,
+                    "rawData": [
+                        0.006387856
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5124678977607661
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.005441579
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.37637718580773
+                    ],
+                    "noteIndex": 7,
+                    "rawData": [
+                        0.004109488
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3247423596721705
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.003604073
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.44222506190580596
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.004754024
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3944163506928404
+                    ],
+                    "noteIndex": 7,
+                    "rawData": [
+                        0.00428606
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.49118413102719616
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.005233248
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2853541457530033
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.003218531
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.23322914046605636
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.002708318
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.30706280933747354
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.003431021
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2838748222615301
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.003204051
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5753269887246536
+                    ],
+                    "noteIndex": 11,
+                    "rawData": [
+                        0.00605686
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D6"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        1,
+                        1
+                    ],
+                    "noteIndex": 19,
+                    "rawData": [
+                        0.010213669,
+                        0.010213669
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5377539088160529,
+                        0.5377539088160529
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.005689085,
+                        0.005689085
+                    ]
+                }
+            ],
+            "midiInstrumentId": "25"
+        },
+        {
+            "name": "rrs443",
+            "key": {
+                "useGlobalKeyScale": true,
+                "globalKeyNote": "E",
+                "globalKeyScale": "locrian pentatonic",
+                "keyNote": "E",
+                "keyScale": "locrian pentatonic",
+                "startOctave": "2",
+                "endOctave": "5"
+            },
+            "options": {
+                "noteDuration": "dotted quarter",
+                "mergeLimit": "3",
+                "restNotes": "",
+                "offset": "24",
+                "sustain": false
+            },
+            "data": "0.002757325\n0.001428232\n0.002040482\n0.003162726\n0.002669045\n0.004014436\n0.004549452\n0.004549452\n0.004542132\n0.005386418\n0.005162196\n0.006299148\n0.005264595\n0.00520444\n0.006030042\n0.005572649\n0.004937262\n0.004174373\n0.003609234\n0.004389842\n0.004094436\n0.00476406\n0.003382155\n0.002955774\n0.003276745\n0.00316786\n0.004893187\n0.007798863\n0.007798863\n0.00477142\n0.00477142",
+            "noteData": [
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2086281563003728
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.002757325
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0
+                    ],
+                    "noteIndex": 0,
+                    "rawData": [
+                        0.001428232
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.09610507970089621
+                    ],
+                    "noteIndex": 2,
+                    "rawData": [
+                        0.002040482
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2722640818468374
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.003162726
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.19477081626608103
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.002669045
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.40595727487591104
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.004014436
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.489938908720345,
+                        0.489938908720345,
+                        0.48878988596263073
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.004549452,
+                        0.004549452,
+                        0.004542132
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6213177313204924
+                    ],
+                    "noteIndex": 12,
+                    "rawData": [
+                        0.005386418
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5861215317603548
+                    ],
+                    "noteIndex": 11,
+                    "rawData": [
+                        0.005162196
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7645892534036268
+                    ],
+                    "noteIndex": 15,
+                    "rawData": [
+                        0.006299148
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.602195135772265,
+                        0.592752586046814
+                    ],
+                    "noteIndex": 11,
+                    "rawData": [
+                        0.005264595,
+                        0.00520444
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7223475979067067
+                    ],
+                    "noteIndex": 14,
+                    "rawData": [
+                        0.006030042
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6505504713740288
+                    ],
+                    "noteIndex": 12,
+                    "rawData": [
+                        0.005572649
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5508135693308874
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.004937262
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.43106263728035743
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.004174373
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3423525864235426
+                    ],
+                    "noteIndex": 7,
+                    "rawData": [
+                        0.003609234
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.4648848756112228
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.004389842
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.4185149006432801
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.004094436
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5236259956038891
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.00476406
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3067079226531877
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.003382155
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2397787597492305
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.002955774
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2901616810014581
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.003276745
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2730699674804584
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.00316786
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5438951023846775
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.004893187
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D6"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        1,
+                        1
+                    ],
+                    "noteIndex": 19,
+                    "rawData": [
+                        0.007798863,
+                        0.007798863
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5247812971744872,
+                        0.5247812971744872
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.00477142,
+                        0.00477142
+                    ]
+                }
+            ],
+            "midiInstrumentId": "13"
+        },
+        {
+            "name": "rrs486",
+            "key": {
+                "useGlobalKeyScale": true,
+                "globalKeyNote": "E",
+                "globalKeyScale": "locrian pentatonic",
+                "keyNote": "E",
+                "keyScale": "locrian pentatonic",
+                "startOctave": "2",
+                "endOctave": 4
+            },
+            "options": {
+                "noteDuration": "dotted quarter",
+                "mergeLimit": "3",
+                "restNotes": "",
+                "offset": "48",
+                "sustain": false
+            },
+            "data": "0.002983838\n0.00219572\n0.002549779\n0.003272649\n0.003103124\n0.003973448\n0.004526096\n0.004526096\n0.004488477\n0.004817343\n0.004603751\n0.005054504\n0.004616654\n0.004511809\n0.004986189\n0.004675067\n0.004327724\n0.003901638\n0.003545017\n0.004013683\n0.003841797\n0.00426225\n0.003480491\n0.003184096\n0.003399742\n0.003407565\n0.004206609\n0.005929432\n0.005929432\n0.004168604\n0.004168604",
+            "noteData": [
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.21108162600650504
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.002983838
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0
+                    ],
+                    "noteIndex": 0,
+                    "rawData": [
+                        0.00219572
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.0948276139134459
+                    ],
+                    "noteIndex": 1,
+                    "rawData": [
+                        0.002549779
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2884338695646584
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.003272649
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.24302999267217185
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.003103124
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.47612884978809294
+                    ],
+                    "noteIndex": 7,
+                    "rawData": [
+                        0.003973448
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.624144551052679,
+                        0.624144551052679,
+                        0.6140690551386931
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.004526096,
+                        0.004526096,
+                        0.004488477
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7021492284354015
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.004817343
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6449428879356521
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.004603751
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.765668053668842
+                    ],
+                    "noteIndex": 11,
+                    "rawData": [
+                        0.005054504
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6483986981320468,
+                        0.6203180641677773
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.004616654,
+                        0.004511809
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7473712487733387
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.004986189
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6640434505928684
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.004675067
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.571014582806601
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.004327724
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.45689597912211755
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.003901638
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3613821848069696
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.003545017
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.486904988922552
+                    ],
+                    "noteIndex": 7,
+                    "rawData": [
+                        0.004013683
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.4408687654537897
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.003841797
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5534786828764512
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.00426225
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3441001876952481
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.003480491
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2647167215896673
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.003184096
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3224731848626782,
+                        0.32456841877466713
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.003399742,
+                        0.003407565
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5385763551125529
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.004206609
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        1,
+                        1
+                    ],
+                    "noteIndex": 14,
+                    "rawData": [
+                        0.005929432,
+                        0.005929432
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5283974768273504,
+                        0.5283974768273504
+                    ],
+                    "noteIndex": 7,
+                    "rawData": [
+                        0.004168604,
+                        0.004168604
+                    ]
+                }
+            ],
+            "midiInstrumentId": "33"
+        },
+        {
+            "name": "rrs551",
+            "key": {
+                "useGlobalKeyScale": true,
+                "globalKeyNote": "E",
+                "globalKeyScale": "locrian pentatonic",
+                "keyNote": "E",
+                "keyScale": "locrian pentatonic",
+                "startOctave": "2",
+                "endOctave": "5"
+            },
+            "options": {
+                "noteDuration": "dotted quarter",
+                "mergeLimit": "3",
+                "restNotes": "",
+                "offset": "72",
+                "sustain": false
+            },
+            "data": "0.001838241\n0.001574092\n0.0017203\n0.00197186\n0.002104641\n0.00217235\n0.002268359\n0.002268359\n0.002034459\n0.001693058\n0.001531856\n0.001453606\n0.001561271\n0.001373482\n0.001561992\n0.001548241\n0.001435606\n0.001380618\n0.001243416\n0.001363094\n0.001136681\n0.001310559\n0.001433103\n0.001362835\n0.001600005\n0.001563756\n0.001941043\n0.002505177\n0.002505177\n0.001846504\n0.001846504",
+            "noteData": [
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5126503840712724
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.001838241
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.319628994165858
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.001574092
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.4264674503981012
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.0017203
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6102896902877321
+                    ],
+                    "noteIndex": 12,
+                    "rawData": [
+                        0.00197186
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7073166454268043
+                    ],
+                    "noteIndex": 13,
+                    "rawData": [
+                        0.002104641
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7567935894587927
+                    ],
+                    "noteIndex": 14,
+                    "rawData": [
+                        0.00217235
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.82695017011376,
+                        0.82695017011376
+                    ],
+                    "noteIndex": 16,
+                    "rawData": [
+                        0.002268359,
+                        0.002268359
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6560326080602357
+                    ],
+                    "noteIndex": 12,
+                    "rawData": [
+                        0.002034459
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.40656092527855403
+                    ],
+                    "noteIndex": 8,
+                    "rawData": [
+                        0.001693058
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.28876591528217843
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.001531856
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.23158635465503738
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.001453606
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3102603149735183
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.001561271
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.17303740748968213
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.001373482
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3107871707334182,
+                        0.30073891337643655
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.001561992,
+                        0.001548241
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.21843322888777172
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.001435606
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.17825189112719356
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.001380618
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.07799438215383893
+                    ],
+                    "noteIndex": 1,
+                    "rawData": [
+                        0.001243416
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.16544659246355123
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.001363094
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0
+                    ],
+                    "noteIndex": 0,
+                    "rawData": [
+                        0.001136681
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.12705773345336774
+                    ],
+                    "noteIndex": 2,
+                    "rawData": [
+                        0.001310559
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.21660421367691246
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.001433103
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.1652573335983444
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.001362835
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3385643801662555,
+                        0.31207617705861024
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.001600005,
+                        0.001563756
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5877708082449637
+                    ],
+                    "noteIndex": 11,
+                    "rawData": [
+                        0.001941043
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D6"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        1,
+                        1
+                    ],
+                    "noteIndex": 19,
+                    "rawData": [
+                        0.002505177,
+                        0.002505177
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.5186883995276566,
+                        0.5186883995276566
+                    ],
+                    "noteIndex": 10,
+                    "rawData": [
+                        0.001846504,
+                        0.001846504
+                    ]
+                }
+            ],
+            "midiInstrumentId": "12"
+        },
+        {
+            "name": "rrs671",
+            "key": {
+                "useGlobalKeyScale": true,
+                "globalKeyNote": "E",
+                "globalKeyScale": "locrian pentatonic",
+                "keyNote": "E",
+                "keyScale": "locrian pentatonic",
+                "startOctave": "2",
+                "endOctave": "5"
+            },
+            "options": {
+                "noteDuration": "dotted quarter",
+                "mergeLimit": "3",
+                "restNotes": "",
+                "offset": "96",
+                "sustain": false
+            },
+            "data": "0.000326767\n0.000356214\n0.000303579\n0.000308767\n0.000364365\n0.000274187\n0.000273851\n0.000273851\n0.000219615\n0.000156785\n0.000146799\n0.000107643\n0.000182627\n0.000139996\n0.000146248\n0.000142314\n0.000156722\n0.000164395\n0.000135992\n0.000125148\n9.89396E-05\n0.000151384\n0.000141407\n0.000134894\n0.000176268\n0.000160241\n0.000294244\n0.000325215\n0.000325215\n0.000223497\n0.000223497",
+            "noteData": [
+                {
+                    "pitch": [
+                        "G5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.8583481460327458
+                    ],
+                    "noteIndex": 16,
+                    "rawData": [
+                        0.000326767
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.9692908063810016
+                    ],
+                    "noteIndex": 18,
+                    "rawData": [
+                        0.000356214
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7709864994081198,
+                        0.790532481066243
+                    ],
+                    "noteIndex": 15,
+                    "rawData": [
+                        0.000303579,
+                        0.000308767
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D6"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        1
+                    ],
+                    "noteIndex": 19,
+                    "rawData": [
+                        0.000364365
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.6602510535917059,
+                        0.6589851611789977,
+                        0.6589851611789977
+                    ],
+                    "noteIndex": 13,
+                    "rawData": [
+                        0.000274187,
+                        0.000273851,
+                        0.000273851
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.45464902756103964
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.000219615
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.21793468145851902
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.000156785
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.1803120575498803
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.000146799
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.03279038102608115
+                    ],
+                    "noteIndex": 1,
+                    "rawData": [
+                        0.000107643
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.3152953711287616
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.000182627
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.15468150372948483,
+                        0.1782361446945168,
+                        0.1634146543623933
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.000139996,
+                        0.000146248,
+                        0.000142314
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.21769732663113628
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.000156722
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.24660563759157933
+                    ],
+                    "noteIndex": 5,
+                    "rawData": [
+                        0.000164395
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.13959628581138053
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.000135992
+                    ]
+                },
+                {
+                    "pitch": [
+                        "A2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.09874111520600515
+                    ],
+                    "noteIndex": 2,
+                    "rawData": [
+                        0.000125148
+                    ]
+                },
+                {
+                    "pitch": [
+                        "E2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0
+                    ],
+                    "noteIndex": 0,
+                    "rawData": [
+                        0.0000989396
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.19758621443162563
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.000151384
+                    ]
+                },
+                {
+                    "pitch": [
+                        "Bb2"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.15999749835547009,
+                        0.1354595302484239
+                    ],
+                    "noteIndex": 3,
+                    "rawData": [
+                        0.000141407,
+                        0.000134894
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2913376037108731
+                    ],
+                    "noteIndex": 6,
+                    "rawData": [
+                        0.000176268
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D3"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.2309552891320876
+                    ],
+                    "noteIndex": 4,
+                    "rawData": [
+                        0.000160241
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.7358165420491029
+                    ],
+                    "noteIndex": 14,
+                    "rawData": [
+                        0.000294244
+                    ]
+                },
+                {
+                    "pitch": [
+                        "G5"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.8525009286978562,
+                        0.8525009286978562
+                    ],
+                    "noteIndex": 16,
+                    "rawData": [
+                        0.000325215,
+                        0.000325215
+                    ]
+                },
+                {
+                    "pitch": [
+                        "D4"
+                    ],
+                    "duration": [
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        },
+                        {
+                            "name": "dotted quarter",
+                            "tonejs": "4n.",
+                            "midiwriter": "d4",
+                            "ticks": 144
+                        }
+                    ],
+                    "normalizedData": [
+                        0.46927460597214876,
+                        0.46927460597214876
+                    ],
+                    "noteIndex": 9,
+                    "rawData": [
+                        0.000223497,
+                        0.000223497
+                    ]
+                }
+            ],
+            "midiInstrumentId": "25"
+        }
+    ]
+}

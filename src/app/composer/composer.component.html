@@ -1,0 +1,106 @@
+
+<h2 class="page-title">Composer</h2>
+<h4><a href="/about">What is this?</a></h4>
+<h6>(<a href="https://github.com/jonvandermeulen/spektune">Source code</a>)</h6>
+
+<app-example [exampleId]="exampleId"></app-example>
+
+<div class="row">
+    <div class="col-lg-12 row">
+        <div class="card col-md-6 col-lg-6">
+            <div class="card-body">
+                <form [formGroup]="composerForm">
+                    <h4 class="card-title"><input type="text" class="form-control" formControlName="name" /></h4>
+                    <!-- <h6 class="card-subtitle">Settings</h6> -->
+                    <div class="row">
+                        <div class="col-md col-lg">
+                            <label for="keyScale">Key/Scale:&nbsp;</label>
+                            <br />
+                            <select formControlName="keyNote" (change)="keyChange()" class="form-select"
+                                style="width: 80px">
+                                <option *ngFor="let note of keyNoteList" value="{{ note }}">{{ note }}</option>
+                            </select>
+                            <select formControlName="keyScale" (change)="keyChange()" class="form-select"
+                                style="width: 250px">
+                                <option *ngFor="let scale of scaleDictionary" value="{{ scale.name }}">{{ scale.name }}
+                                </option>
+                            </select>
+                            <br />
+                            Scale Notes: {{keyScaleNotes?.notes.join(', ')}}
+                        </div>
+                        <div class="col-md col-lg">
+                            <label for="tempo">Tempo (bpm)</label>
+                            <br />
+                            <input type="number" formControlName="tempo" class="form-control" style="width: 150px" />
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="card col-md-4 col-lg-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md col-lg">
+                        <button type="button" class="btn btn-default" (click)="buildMIDI()"
+                            tooltip="MIDI file containing all tracks in this composition.">
+                            <i class="fa fa-download"></i><br />Download MIDI</button>
+                    </div>
+                    <div class="col-md-2 col-lg-2">
+                        <button type="button" class="btn btn-default" (click)="downloadJson()"
+                            tooltip="Save this composition in JSON format">
+                            <i class="fa fa-download"></i><br />Save</button>
+                    </div>
+                    <div class="col-md-2 col-lg-2">
+                        <button type="file" class="btn btn-default" (click)="fileUpload.click()"
+                            tooltip="Load a saved composition in JSON format">
+                            <i class="fa-solid fa-folder-open"></i><br />Load</button>
+                        <input type="file" #fileUpload style="display: none" (change)="fileSelected($event)" accept="application/json" />
+                    </div>
+                    <div class="col-md col-lg">
+                        <button type="file" class="btn btn-default" (click)="csvUpload.click()"
+                            tooltip="Import data from CSV">
+                            <i class="fa-solid fa-folder-open"></i><br />Import CSV</button>
+                        <input type="file" #csvUpload style="display: none" (change)="csvSelected($event)" accept="text/csv" />
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md col-lg">
+                    <button type="button" class="btn btn-success" (click)="previewComposition()">
+                        <span [ngSwitch]="playerState">
+                            <b *ngSwitchCase="'stopped'"><i class="fa fa-play" style="width: auto;">&nbsp;</i>Play</b>
+                            <b *ngSwitchCase="'loading'"><i class="fa fa-stop" style="width: auto;">&nbsp;</i>Loading instruments...</b>
+                            <b *ngSwitchCase="'playing'"><i class="fa fa-stop" style="width: auto;">&nbsp;</i>Stop</b>
+                        </span>
+                    </button>
+                    &nbsp;
+                    <button type="button" id="recordButton" class="btn btn-default" style="width: auto;" (click)="toggleRecording()" tooltip="Record playback">
+                        <span [ngSwitch]="record">
+                            <b *ngSwitchCase="false"><i class="fa fa-circle" style="width: auto; color:rgb(255, 0, 0);"></i></b>
+                            <b *ngSwitchCase="true"><i class="fa fa-stop" style="width: auto; color:rgb(255, 255, 255);">&nbsp;</i>Recording...</b>
+                        </span>
+                    </button>
+                    &nbsp;
+                    <b class="fa fa-info-circle" style="font-size: large;" tooltip="When recording, allow the song to play to the desired point.<br/> <br/> A new .webm file will be created - it can be played in a browser or converted to mp3 using a tool like <b>JS Audio Converter</b>">&nbsp;</b>(<a href="https://js-audio-converter.com/" target="_blank">Convert .webm to .mp3 here.</a>)
+                    </div>
+                    <!-- <div class="col-md col-lg">
+                        <label><input type="checkbox" formControlName="record"> Record?</label>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-10 row">
+        <div class="card col-md col-lg">
+            <div class="card-body">
+                <h4 class="card-title">Tracks</h4>
+                <div *ngFor="let t of model.tracks; let i = index" @fade>
+                    <app-track [model]="t" (removeTrackEventHandler)="removeTrack($event, i)" 
+                        (previewTrackEventHandler)="previewTrack($event, i)"></app-track>
+                </div>
+                <button type="button" class="btn btn-default btn-warning" (click)="addTrack()"><i class="fa fa-plus"></i> Add Track</button>
+            </div>
+        </div>
+    </div>
+</div>

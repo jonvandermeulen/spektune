@@ -1,0 +1,80 @@
+[
+    {
+        "name": "whole",
+        "tonejs": "1n",
+        "midiwriter": "1",
+        "ticks": 384
+    },
+    {
+        "name": "dotted half",
+        "tonejs": "2n.",
+        "midiwriter": "d2",
+        "ticks": 288
+    },
+    {
+        "name": "half",
+        "tonejs": "2n",
+        "midiwriter": "2",
+        "ticks": 192
+    },
+    {
+        "name": "dotted quarter",
+        "tonejs": "4n.",
+        "midiwriter": "d4",
+        "ticks": 144
+    },
+    {
+        "name": "quarter",
+        "tonejs": "4n",
+        "midiwriter": "4",
+        "ticks": 96
+    },
+    {
+        "name": "quarter triplet",
+        "tonejs": "4t",
+        "midiwriter": "4t",
+        "ticks": 64
+    },
+    {
+        "name": "dotted eighth",
+        "tonejs": "8n.",
+        "midiwriter": "d8",
+        "ticks": 72
+    },
+    {
+        "name": "eighth",
+        "tonejs": "8n",
+        "midiwriter": "8",
+        "ticks": 48
+    },
+    {
+        "name": "eighth triplet",
+        "tonejs": "8t",
+        "midiwriter": "8t",
+        "ticks": 32
+    },
+    {
+        "name": "sixteenth",
+        "tonejs": "16n",
+        "midiwriter": "16",
+        "ticks": 24
+    },
+    {
+        "name": "sixteenth triplet",
+        "tonejs": "16t",
+        "midiwriter": "16t",
+        "ticks": 16
+    },
+    {
+        "name": "thirty-second",
+        "tonejs": "32n",
+        "midiwriter": "32",
+        "ticks": 12
+    },
+    {
+        "name": "sixty-fourth",
+        "tonejs": "64n",
+        "midiwriter": "64",
+        "ticks": 6
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "id": "australia",
+        "name": "Northwest Australia - Indian Ocean",
+        "description": "A series of daily images captured by the Visual Infrared Imaging Radiometer Suite (<a href=\"https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/jpss-mission-and-2\" target=\"_blank\">VIIRS</a>), from August 1-31, 2016. <br /> <br /> Each 'beat' is a dotted-quarter note. Each track is offset from the next one by a 16th note, leaving an 8th note 'rest' in between each row of data. <ul><li><code>rrs410</code> and <code>rrs671</code> are Acoustic Guitar. They bookend each phrase.</li><li><code>rrs443</code> is a Marimba, and <code>rrs551</code> is a Vibraphone. They are similar but distinct instruments, and they form the interior of each phrase.</li><li><code>rrs486</code> is a thumping standup bass at the center of each phrase.</li></ul>",
+        "image": "/assets/images/australia-timed.gif",
+        "image_thumb": "/assets/images/australia-timed-sm.gif",
+        "song_url": "/assets/examples/Australia.mp3",
+        "data_file": "/assets/examples/australia.json",
+        "youtube": "https://www.youtube-nocookie.com/embed/kP-_nYJPNeo",
+        "garageBand_ios": "/assets/examples/Australia.ios.band.zip",
+        "garageBand_macos": "/assets/examples/Australia.macos.band.zip"
+    },
+    {
+        "id": "queensland",
+        "name": "Off the Coast of Queensland, Australia",
+        "description": "<p>This spectral reflectance data are extracted from a rolling 32-day average global image from MODIS-Aqua, and the averages are computed every 8-days, making for 48 images per year. <br/><br/>The actual data that are extracted are actually the mean of a 10x10 box of 9 km resolution data (which equals a box of 8,100 km<sup>2</sup>), in order to help fill in gaps that may arise from cloud cover throughout the year. <a href=\"https://goo.gl/maps/JxmuUPfJDyNoZqDi7\" target=\"_blank\">The center location of that 10x10 box is -16.625, 153.2917</a></p><p>With so few data points used to express an entire year, we slowed this one down to around 20 BPM and used synth instruments with long, sweeping depth. You can really hear the how the seasons change (eg: listen to 0:45 - 1:30).</p>",
+        "image": "/assets/images/queensland.gif",
+        "image_thumb": "/assets/images/queensland-focus.gif",
+        "image_thumb2": "/assets/images/queensland-sm.gif",
+        "song_url": "/assets/examples/Queensland.mp3",
+        "data_file": "/assets/examples/queensland.json",
+        "youtube": "https://www.youtube-nocookie.com/embed/I2ND7_p2tTc",
+        "garageBand_ios": "/assets/examples/Queensland.ios.band.zip",
+        "garageBand_macos": "/assets/examples/Queensland.macos.band.zip"
+    },
+    {
+        "id": "eddy",
+        "name": "Bering Sea Eddy",
+        "description": "<p>This is a frozen moment in time - a transect across a beautiful swirling eddy off the coast of the Kamchatka Peninsula in the Western Bering Sea. Collected by the Moderate Resolution Imaging Spectroradiometer (<a href=\"https:\/\/terra.nasa.gov\/about\/terra-instruments\/modis\" target=\"_blank\">MODIS<\/a>) onboard the Aqua satellite.</p><ul><li><code>rrs-443</code> - Double Bass - A-minor pentatonic (relative minor of C-maj), 02-04 octave</li>    <li><code>rrs-547</code> - Harp - C-major pentatonic, 03-05 octave</li><li><code>rrs-667</code> - Flute - C-major pentatonic, 04-06 octave</li></ul><b>From Ryan Vandermeulen:</b><blockquote>Something kind of fun about the eddy: you can see that it is rotating clockwise in the image (thus it is an anticyclonic, or \"warm core\" eddy). Due to the effect of the Coriolis Force (i.e. the physical force imparted on the water by a spinning Earth), water sort of piles up in the middle when they turn clockwise, and the opposite happens when they spin counter clockwise (i.e. there is a shallow depression in sea surface height, by 10 cm or so). <br/><br/>Analogous to weather patterns, water moves from areas of high pressure (or sea surface height) to areas of low pressure (sea surface height). If you imagine that you could roll a golf ball starting from the center of the eddy, it would \"roll downhill\", or towards the outer edge of the eddy, but because the Earth is spinning, the ball would move a little bit to the right (in the direction of rotation). All the particles of water are being pushed slightly to the right as the pressure gradient force (movement from high to low height) and the Coriolis force (spin of Earth) are balanced (this is called Geostrophic Balance).<br /><br />As I mentioned, it is spinning, and all the water is being pushed to the right, and those particles of water that were pushed right, they push the water beneath them a little to the right as well, and so forth, and thus, water continues to \"pile up\" in the middle, sustaining the forces of rotation. In addition, the pile up of surface water means that below the surface of the ocean, your access to deep sea nutrients is also being pushed down farther.<br /><br />Notice that the middle of the eddy is blue = less nutrients = less phytoplankton. The opposite happens when the rotation is counter-clockwise (\"cold-core\" eddy). In that case, as water is pushed to the right, it's not piling up, but moving outward, and since that water void needs to be replaced from somewhere, and it is essentially \"pumped up\" from the deeper, colder ocean, which is full of rich nutrients that facilitate phytoplankton growth</blockquote>",
+        "image": "/assets/images/eddy-lg.png",
+        "image_thumb": "/assets/images/eddy-sm.png",
+        "song_url": "/assets/examples/Eddy.mp3",
+        "data_file": "/assets/examples/eddy.json",
+        "youtube": "https://www.youtube-nocookie.com/embed/gV9gZeaObDU",
+        "garageBand_ios": "/assets/examples/Eddy.ios.band.zip",
+        "garageBand_macos": "/assets/examples/Eddy.macos.band.zip"
+    },
+    {
+        "id": "rio",
+        "name": "Rio de la Plata - Southwest Atlantic Ocean",
+        "description": "<p>test</p>",
+        "image": "/assets/images/rio-transect.png",
+        "image_thumb": "/assets/images/rio-transect-sm.png",
+        "song_url": "/assets/examples/Rio-de-la-Plata.mp3",
+        "data_file": "/assets/examples/rio.json",
+        "youtube": "https://www.youtube-nocookie.com/embed/P4_JPZYaUOM",
+        "garageBand_ios": "/assets/examples/Rio-de-la-Plata.ios.band.zip",
+        "garageBand_macos": "/assets/examples/Rio-de-la-Plata.macos.band.zip"
+    },
+    {
+        "id": "btc",
+        "name": "Bitcoin - May 17, 2021 - May 17, 2022",
+        "description": "<p>test</p>",
+        "image": "/assets/images/btc-1y.png",
+        "image_thumb": "/assets/images/btc-1y-sm.png",
+        "song_url": "/assets/examples/btc-20210517-20220517.mp3",
+        "data_file": "/assets/examples/btc.json",
+        "youtube": "",
+        "garageBand_ios": "/assets/examples/BTC-20210517-20220517.ios.band.sip",
+        "garageBand_macos": "/assets/examples/BTC-20210517-20220517.macos.band.zip"
+    }
+]

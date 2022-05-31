@@ -1,0 +1,138 @@
+<div class="container-fluid track-modulation-component">
+    <form [formGroup]="modForm" (ngSubmit)="update()">
+        <div class="row">
+            <div class="col-md-3 col-lg-3">
+                <div class="row">
+                    <div>
+                        <label for="dataInput">Data <i class="fa fa-info-circle"
+                                tooltip="Data should be a single column of line-break-delimited numbers">&nbsp;</i></label><br />
+                        <textarea formControlName="dataInput" class="form-control dataInput"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-9">
+                <div class="row">
+                    <div class="col-md col-lg">
+                        <label for="modulationType">Modulation Type:</label>
+                        <br />
+                        <select formControlName="modulationType" class="form-select" style="width: auto;">
+                            <option *ngFor="let modType of modulationTypes" value="{{ modType.id }}">{{ modType.name }}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md col-lg">
+                        <label for="duration">Duration per data point:
+                            <i class="fa fa-info-circle"
+                                tooltip="Each data point will cause modulation of this length.">&nbsp;</i>
+                        </label>
+                        <br />
+                        <select formControlName="duration" class="form-select" style="width: auto;">
+                            <option *ngFor="let duration of durationDictionary" value="{{ duration.name }}">{{
+                                duration.name }} note</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-md-4 col-lg-4">
+                        <label for="mergeLimit">Volume: &nbsp;<i class="fa fa-exclamation-triangle"
+                                tooltip="Experimental: you may not hear the results when previewing the track."></i></label>
+                        <br />
+                        <input type="number" formControlName="volume" min="0" max="100" class="form-control"
+                            style="width: 80px" />
+                    </div> -->
+                    <!-- <div class="col-md-4 col-lg-4">
+                        <label>
+                            <input type="checkbox" formControlName="sustain" value="true" />&nbsp;Sustain&nbsp;</label>
+                        <i class="fa fa-info-circle"
+                            tooltip="When checked, the 'pedal-down' signal will be on for the entire track, causing each note to play past it's duration. <br /> <br />Recommended for Harp and mallet instruments. <i>Not</i> recommended for strings/piano/synth or any instrument that does not have a reasonable decay.">&nbsp;</i>
+                        <i class="fa fa-exclamation-triangle"
+                            tooltip="Experimental: you may not hear the results when previewing the track."></i>
+                    </div> -->
+                    <div class="col-md-4 col-lg-4">
+                        <label for="mergeLimit">Merge Repeating:
+                            <i class="fa fa-info-circle"
+                                tooltip="Consecutive notes can be merged to create one note of longer duration.">&nbsp;</i>
+                        </label>
+                        <br />
+                        <select formControlName="mergeLimit" class="form-select" style="width: auto;">
+                            <option value="0">No limit</option>
+                            <option value="1">Do not merge</option>
+                            <option *ngFor="let limit of this.range(2,8)" value="{{ limit }}">{{ limit }}</option>
+                        </select>
+                    </div>
+
+
+                    <!-- <div class="col-md-4 col-lg-4" hidden>
+                        <label for="restNotes">Rest Notes:&nbsp;<i class="fa fa-exclamation-triangle"
+                            tooltip="Not implemented (yet). <br /><br />The intent is to specify note(s) that would be replaced with a 'rest'. Useful if (for instance) you want the lowest note to be treated like 'no data'."
+                                title="Experimental"></i></label>
+                        <br />
+                        <input type="text" formControlName="restNotes" class="form-control" />
+                    </div> -->
+
+                </div>
+
+                <br />
+                <div class="row">
+                    <div class="col-md col-lg">
+                        <label for="octaves">Range of Values:&nbsp;</label>
+                        <br />
+                        <input type="number" formControlName="rangeMin" min="0" max="127" class="form-control"
+                            style="width: 80px" />
+                        to
+                        <input type="number" formControlName="rangeMax" min="0" max="127" class="form-control"
+                            style="width: 80px" />
+                    </div>
+                    <!-- <div class="col-md col-lg">
+                        <label for="keyScale">Key/Scale:&nbsp;</label>
+                        <br />
+                        <select formControlName="keyNote" (change)="keyChange()" class="form-select"
+                            style="width: auto;">
+                            <option *ngFor="let note of keyNoteList" value="{{ note }}">{{ note }}</option>
+                        </select>
+                        <select formControlName="keyScale" (change)="keyChange()" class="form-select"
+                            style="width: auto;">
+                            <option *ngFor="let scale of scaleDictionary" value="{{ scale.name }}">{{ scale.name }}
+                            </option>
+                        </select>
+                        <br />
+                        Scale Notes: {{keyScaleNotes?.notes.join(', ')}}
+                        <br />
+                        <label>
+                            <input type="checkbox" formControlName="useGlobal" (click)="keyChange()"
+                                value="true" />&nbsp;Use
+                            Global Key/Scale</label>
+                    </div>
+                    <div class="col-md col-lg">
+                        <label for="octaves">Octaves:&nbsp;</label>
+                        <br />
+                        <select formControlName="startOctave" (change)="octaveChange()" class="form-select"
+                            style="width: auto;">
+                            <option *ngFor="let octave of range(0,9)" value="{{ octave }}">{{ octave }}</option>
+                        </select> to
+                        <select required formControlName="endOctave" (change)="octaveChange()" class="form-select"
+                            style="width: auto;">
+                            <option *ngFor="let octave of range(0,9)" value="{{ octave }}">{{ octave }}</option>
+                        </select>
+                        <br />
+                        ({{notesCollection.length}}): {{notesCollection.join(', ')}}
+                    </div>
+                </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11 col-lg-11">
+                    <br />
+                    <div class="row">
+                        <div class="col-md col-lg">
+                            <button type="button" class="btn-circle btn-delete" (click)="removeModulation()"
+                                title="Remove Modulation"><i class="fa fa-trash" style="font-size: 19px;"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

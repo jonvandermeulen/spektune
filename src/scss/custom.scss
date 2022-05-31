@@ -1,0 +1,12 @@
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+// @import "colors/megna-dark";
+
+// @import "dark";
+
+.form-control {
+    display: inline;
+}
+.form-select {
+    display: inline;
+    width: auto;
+}

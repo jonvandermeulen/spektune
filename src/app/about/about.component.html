@@ -1,0 +1,321 @@
+<h2 class="page-title">About Spektune</h2>
+<h4><a href="/">&lt; Composer</a></h4>
+
+<div class="row">
+    <div class="col-lg-12 row">
+        <div class="card col-md-10 col-lg-8">
+            <div class="card-body">
+                <p dir="auto">An application for translating data into MIDI files (and ultimately, into music). The
+                    concept was inspired
+                    by and developed in collaboration with Ryan Vandermeulen, Satellite Oceanographer at NASA Goddard's
+                    Ocean Ecology
+                    Laboratory.</p>
+                <p dir="auto">Simply paste a list of numbers into the system, and listen to the results. Change the key, 
+                    the scales, the timing, the instruments... See where it takes you! Spektune Composer has a built-in
+                    player based on <a href="https://tonejs.github.io/">ToneJS</a> and Benjamin Gleitzman's 
+                    <a href="https://github.com/gleitz/midi-js-soundfonts">pre-rendered soudnfonts</a>.</p>
+                <p><strong>For best results</strong>, use Spektune to generate a MIDI file and import it into any 
+                    Digial Audio Workstation. There are some <a href="https://musicproductionnerds.com/free-digital-audio-workstations">
+                        really great free options</a> available. All of our sample songs were produced in GarageBand.</p>
+                
+                <h2>How it started</h2>
+                <p>Our original plan was to turn reflectance data gathered by NASA satellites into music, in order to
+                    highlight the natural harmonies of blue/green/red light being reflected (or absorbed) by our ocean
+                    the microscopic life in it.</p>
+                <p>Initial attempts proved interesting, but suffered from poor-quality instruments and limited expression options.</p>
+                
+                <h2>How it's going</h2>
+                <p><a href="https://www.spektune.com/composer">Spektune Composer</a> was developed to help us experiment 
+                and blend musical theory with raw numbers - in a way that turns objective science into subjective beauty.</p>
+                <p>Anyone can use this tool. We would love to hear what you come up with! Share it with us @Spektune on <a href="https://twitter.com/Spektune">Twitter</a> and <a href="https://www.instagram.com/spektune">Instagram</a>.</p>
+
+
+                <h2 dir="auto">How it works</h2>
+                <p dir="auto">Generate a MIDI track by supplying data and selecting configuration options for the
+                    musical
+                    interpreter.</p>
+                <p>Select a key/scale that you want the data to conform to, along with an octave range.
+                    Provide a list of line-break-delimited numbers. Spektune will normalize the data and map each
+                    data point to a note on the selected key/scale/octaves. Options can be specified to govern
+                    the performance of the data. For instance, tie repeated notes together to form one longer note.
+                </p>
+                <p><strong>Once the data is processed by this tool</strong>, you can import the resulting MIDI file into 
+                    any Digital Audio Workstation (DAW) software, where you can further develop the song.</p>
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1432562563&color=%2317d070&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <div
+                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/spektune" title="Spektune" target="_blank"
+                        style="color: #cccccc; text-decoration: none;">Spektune</a> · <a
+                        href="https://soundcloud.com/spektune/sets/sonus-tabula-mundi" title="Sonus Tabula Mundi"
+                        target="_blank" style="color: #cccccc; text-decoration: none;">Sonus Tabula Mundi</a>
+                </div>
+
+                <h2>Examples</h2>
+                <ul>
+                    <li>
+                        <b><a href="/composer?loadexample=eddy" style="font-size:large">Beiring Sea Eddy</a></b> - This is a frozen moment in time - a transect across a <a
+                            href="/assets/images/eddy-lg.png" target="_blank" style="font-weight: 400; cursor: pointer;"
+                            tooltip="<img src='/assets/images/eddy-sm.png' />">beautiful swirling eddy</a> off the coast
+                        of the Kamchatka Peninsula, in the Western Bering Sea.
+                        Collected by the Moderate Resolution Imaging Spectroradiometer (<a
+                            href="https://terra.nasa.gov/about/terra-instruments/modis" target="_blank">MODIS</a>)
+                        onboard the Aqua satellite.
+                        <ul>
+                            <li>
+                                <audio id="play-eddy" src="/assets/examples/Eddy.m4a" type="audio/m4a"></audio>
+                                <button name="play-eddy-btn" (click)="play('eddy')" class="btn btn-sm btn-warning"><i
+                                        id="icon-eddy" class="fa fa-play"></i></button>
+                                (<a href="/assets/examples/Eddy.m4a">m4a</a>) (<a
+                                    href="/assets/examples/Eddy.mp3">mp3</a>)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b><a href="/composer?loadexample=queensland" style="font-size:large">Queensland</a></b> - Spectral reflectance data extracted from a rolling 32-day average global
+                        image from MODIS-Aqua.
+                        This sample focuses on a single point off the coast of Queensland, Australia. This slow ambient
+                        soundscape tells the story of the seasons.
+                        <ul>
+                            <li><audio id="play-queensland" src="/assets/examples/Queensland.mp3"
+                                    type="audio/mp3"></audio>
+                                <button name="play-queensland-btn" (click)="play('queensland')"
+                                    class="btn btn-sm btn-warning"><i id="icon-queensland"
+                                        class="fa fa-play"></i></button>
+                                (<a href="/assets/examples/Queensland.m4a">m4a</a>) (<a
+                                    href="/assets/examples/Queensland.mp3">mp3</a>)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b><a href="/composer?loadexample=australia" style="font-size:large">Northwest Australia - Indian Ocean</a></b> - A series of daily images captured by the
+                        Visual Infrared Imaging Radiometer Suite
+                        (<a href="https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/jpss-mission-and-2"
+                            target="_blank">VIIRS</a>), from August 1-31, 2016.
+                        <ul>
+                            <li><audio id="play-australia" src="/assets/examples/Australia.mp3"
+                                    type="audio/mp3"></audio>
+                                <button name="play-australia-btn" (click)="play('australia')"
+                                    class="btn btn-sm btn-warning"><i id="icon-australia"
+                                        class="fa fa-play"></i></button>
+                                (<a href="/assets/examples/Australia.m4a">m4a</a>) (<a
+                                    href="/assets/examples/Australia.mp3">mp3</a>))
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b><a href="/composer?loadexample=rio" style="font-size:large">Rio de la Plata - Southwest Atlantic Ocean</a></b> - Similar to 
+                        the Bering Sea Eddy, this song is built from a transect of a still image - a line drawn on the map.
+                        (<a href="https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/jpss-mission-and-2"
+                            target="_blank">VIIRS</a>).
+                        <ul>
+                            <li><audio id="play-rio" src="/assets/examples/Rio-de-la-Plata.mp3" type="audio/mp3"></audio>
+                                <button name="play-rio-btn" (click)="play('rio')" class="btn btn-sm btn-warning"><i
+                                        id="icon-rio" class="fa fa-play"></i></button>
+                                (<a href="/assets/examples/Rio-de-la-Plata.m4a">m4a</a>) (<a href="/assets/examples/Rio-de-la-Plata.mp3">mp3</a>))
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b><a href="/composer?loadexample=btc" style="font-size:large">Bitcoin - May 17, 2021 - May 17, 2022</a></b> -
+                        You can make a song out of any data! This song follows the price/volatility/volume of BTC over the course of 1 year.
+                        <ul>
+                            <li><audio id="play-btc" src="/assets/examples/btc-20210517-20220517.mp3" type="audio/mp3"></audio>
+                                <button name="play-btc-btn" (click)="play('btc')" class="btn btn-sm btn-warning"><i id="icon-btc"
+                                        class="fa fa-play"></i></button>
+                                (<a href="/assets/examples/btc-20210517-20220517.m4a">m4a</a>) (<a
+                                    href="/assets/examples/btc-20210517-20220517.mp3">mp3</a>))
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 dir="auto">How to Use Spektune Composer</h3>
+                <ul>
+                    <li>Enter a name for your composition</li>
+                    <li>Select a <strong>Key Note and Scale</strong>. This determines which notes should be mapped to
+                        the
+                        data. This value can be overridden in individual tracks.</li>
+                    <li>Add a track</li>
+                    <li>Paste your data into the form. Data should be a line-break-delimited set of numeric values.
+                        (Support for things like CSV files coming soon), and configure options:
+                        <ul>
+                            <li>
+                                <p dir="auto"><strong>MIDI Instrument</strong> (work-in-progress) - Select from the
+                                    standard MIDI instrument
+                                    library. This is generally irrelevant unless you're planning on playing the MIDI
+                                    file directly in a media player like VLC</p>
+                            </li>
+                            <li>
+                                <p dir="auto"><strong>Note Duration</strong> - The length of note assigned to each data
+                                    point.</p>
+                            </li>
+                            <li>
+                                <p dir="auto"><strong>Merge Repeating Notes</strong> - If two or more consecutive notes
+                                    occur, combine them into
+                                    one loger note</p>
+                                <ul dir="auto">
+                                    <li>
+                                        <p dir="auto"><strong>No limit</strong>: Consecutive notes will be merged
+                                            indefinitely</p>
+                                    </li>
+                                    <li>
+                                        <p dir="auto"><strong>Do not merge</strong>: self explanitory</p>
+                                    </li>
+                                    <li>
+                                        <p dir="auto"><em><strong>n</strong></em> - Merge up to <em>n</em> consecutive
+                                            notes.</p>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <p dir="auto"><strong>Key/Scale</strong> - Select which notes the data will be
+                                    mapped to based on a key note and scale. This setting can be changed at the
+                                    Track-level
+                                    by unchecking the <strong>Use Global Key/Scale</strong> option.</p>
+                            </li>
+                            <li>
+                                <p dir="auto"><strong>Octaves</strong> - The octave range of the data-&gt;notes
+                                    mapping.
+                                </p>
+                            </li>
+                            <li><b>Sustain</b> - Sets the Pedal-down status on the track to 'On.' This allows each note
+                                to decay
+                                naturally without being interrupted by the next note. Ideal for instruments like the
+                                Harp, or
+                                mallet instruments like Xylophone. May cause a bit of cacaphony when used with Piano or
+                                Strings
+                            </li>
+                            <li><strong>Offset</strong> - This value will cause the track start to be delayed by the
+                                selected
+                                duration.
+                                Allows you to shift the timing of tracks so that they don't all strike notes at
+                                the same time.
+                                See <a href="/composer?loadexample=australia">Australia example</a>.
+                            </li>
+                            <li>
+                                <strong>Preview</strong> your track by pressing the play button. This plays the melody
+                                on the Piano (no other instruments at this time).
+                            </li>
+                            <li><strong>Download CSV</strong> - This option will export a comma-separated spreadsheet
+                                with all original data, normalized data, and note information. This is useful for
+                                powering
+                                visualizations/graphs.</li>
+                            <li><strong>Download MIDI</strong> - Each track can be exported in MIDI format individually.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Download MIDI</strong> - All tracks can be exported in one MIDI file.</li>
+                    <li><strong>Save</strong> - Save this Composition in a format that can be imported again later.</li>
+                    <li><strong>Load</strong> - Load a saved file.</li>
+                </ul>
+
+
+                <!-- <h3 dir="auto">Upcoming(?) Features</h3>
+                <ul dir="auto">
+                    <li>
+                        <p dir="auto"><em>Upcoming(?) Features</em>:</p>
+                        <ul dir="auto">
+                            <li> -->
+                <!-- /*
+                                c - channel, nn - note, vv - velocity
+                                aftertouch(c, nn, xx) - aftertouch; returns Ac nn xx
+                                pressure(c, xx) - pressure (channel aftertouch); returns Dc xx.
+                                breathF(c, xx) - breath controller 0 <= xx <=1 
+                                footF(c, xx) - foot controller 0 <=xx <=1 volumeF(c, xx) balance(c, xx)
+                                expressionF(c, xx) portamentoTimeF(c, xx) 
+                                portamento(c, b) - portamento on/off; default: b=true; sostenuto(c, b) -
+                                sostenuto pedal on/off; default: b=true; 
+                                soft(c, b) - soft pedal on/off; default: b=true; returns Bc 43 7f/00.
+                                legato(c, b) - legato on/off; default: b=true; returns Bc 44 7f/00. 
+                                damper(c, b) - damper pedal on/off; default: b=true *SUSTAIN 
+                                hold2(c, b) - hold 2 on/off; default: b=true; returns Bc 45 7f/00. The Hold Pedal CC69 is an
+                                    alternative control message to Sustain that controls how notes are held and fade out. Values of 0-63 indicate OFF.
+                                    Values 26-127 indicate ON. */ -->
+                <!-- <p dir="auto"><strong>Modulation</strong>: Supply additional data and/or create rules to govern 
+                                    adjustments to the track. Examples:</p>
+                                <ul>
+                                    <li><b>Modwheel</b>: The Modulation Wheel controls low-frequency oscillator (LFO) of 0-100 Hz that governs (depending 
+                                        on the instrument) oscillations of pitch, volume, or other filters. Low values can sound like vibrato, high values 
+                                        can sound like a science fiction.</li>
+                                    <li><b>Aftertouch</b>: Aftertouch is how "hard" a key is being pressed while the note is playing. 
+                                        How this will sound depends on the settings in the instrument you are playing. 
+                                        This is particularly fun with synth sounds.</li>
+                                    <li><b>Portamento</b>: Turn on/off "Portamento" (causing notes to "slide" into each other, instead
+                                        of playing distinct pitches)</li>
+                                    <li><b>Velocity</b>: Controls how hard a note is struck initially. This can often change the timbre of the note
+                                        (think of how a different piano sounds when you hit a key soft or hard).</li>
+                                    <li>
+                                        <p dir="auto"><strong>Drum Tracks!</strong></p>
+                                    </li>   
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                 -->
+                <h3 dir="auto">About the Authors</h3>
+                <p><b style="font-size: 22px">Ryan Vandermeulen</b> is a Satellite Oceanographer at NASA Goddard's Ocean
+                    Ecology
+                    Laboratory.</p>
+
+                <p>"The ocean is blue... sort of," Ryan explains, "but the color palette of the ocean is much more than
+                    just blue."
+                    NASA satellites measure light reflected from the ocean's surface, using instruments that detect
+                    specific wavelengths
+                    of light - like red, green, and blue (albeit in a much more complicated science-y way). The
+                    intensity of these colors,
+                    and their relative values to each other tell us about the balance of microscopic life in the ocean -
+                    phytoplankton that
+                    are responsible for generating much of the oxygen that we breathe.</p>
+
+                <p>The data can look chaotic.</p>
+
+                <p>"Nothing is linear in nature, and nothing is predictable beyond first order tendencies. But within
+                    the chaos is an
+                    overtly sophisticated order that we owe our lives to."</p>
+
+                <p>Ryan created a prototype song developed from a transect (sequential data that represents a
+                    line drawn across the map, as it were) of the Gulf of Mexico.</p>
+
+                <p>He worked with his brother, Jon, to turn the data into music. <a
+                        href="https://www.youtube.com/watch?v=aiQ4sQyYyrc" target="_blank">See the results here</a>.</p>
+
+                <p>"These melodies are simply a manifestation of natural patterns created by microscopic life in the
+                    ocean."</p>
+
+                <p>Ryan lives near Washington, D.C.. When he is not doing
+                    science in the lab, he is doing science in the kitchen and makes keen observations of the natural
+                    world
+                    with his young daughter.</p>
+
+                <p><b style="font-size: 22px">Jon Vandermeulen</b> is a veteran software engineer, with over 25 years
+                    experience developing web applications. </p>
+
+                <p>"When Ryan emailed me his idea and a (really, quite terrible) audio rendering, I told him that I was
+                    going to help him
+                    and he didn't have a choice about that," says Jon.</p>
+
+                <p>"Our first attempt used a browser-based audio engine called <a
+                        href="https://tonejs.github.io/">ToneJS</a> - which is awesome for what it is
+                    (a simple-ish way to play instruments in a web browser), but not awesome for what it isn't (a
+                    studio-quality
+                    Digital Audio Workstation)."</p>
+
+                <p>Over the course of 18 months, the project evolved into a system for generating note data that could
+                    be <i>imported into</i>
+                    any DAW via Musical Instrument Digital Interface (MIDI) files.</p>
+
+                <p>"Music has always been a part of our lives," Jon says. "Ryan and I both spent some time nursing
+                    delusions of Rock-Stardom,
+                    but we never seriously collaborated on anything."</p>
+
+                <p>Jon lives in Houston, TX. When he is not engineering software, he is being raised by his wife and
+                    three teen children.</p>
+
+            </div>
+        </div>
+    </div>
+</div>

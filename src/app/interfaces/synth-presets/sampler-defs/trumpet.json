@@ -1,0 +1,16 @@
+{
+    "urls": {
+        "C5": "C5.[mp3|ogg]",
+        "D4": "D4.[mp3|ogg]",
+        "D#3": "Ds3.[mp3|ogg]",
+        "F2": "F2.[mp3|ogg]",
+        "F3": "F3.[mp3|ogg]",
+        "F4": "F4.[mp3|ogg]",
+        "G3": "G3.[mp3|ogg]",
+        "A2": "A2.[mp3|ogg]",
+        "A4": "A4.[mp3|ogg]",
+        "A#3": "As3.[mp3|ogg]",
+        "C3": "C3.[mp3|ogg]"
+    },
+    "baseUrl": "/assets/samples/trumpet/"
+}
