@@ -2,6 +2,7 @@
 
 #ng
 # /src/assets
+/src/scss/old
 
 # Compiled output
 /dist
