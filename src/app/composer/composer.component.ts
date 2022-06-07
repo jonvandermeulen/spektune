@@ -11,6 +11,7 @@ import { PlayerService } from '../services/player.service';
 import * as Tone from 'tone';
 import { ActivatedRoute } from '@angular/router';
 import { DataConversionService } from '../services/data-conversion.service';
+import { GuidedTour, GuidedTourService, Orientation } from 'ngx-guided-tour';
 
 @Component({
   selector: 'app-composer',
@@ -78,10 +79,15 @@ export class ComposerComponent implements OnInit {
     private playerService: PlayerService,
     private dataService: DataConversionService,
     private router: ActivatedRoute,
-    private http: HttpClient
+    private http: HttpClient,
+    private guidedTourService: GuidedTourService
   ) {
     this.trackComponents = new QueryList<TrackComponent>();
     // this.piano = new Piano().toDestination();
+  }
+
+  start_tutorial() {
+    this.guidedTourService.startTour(this.composerTour);
   }
 
   playerStatusUpdate(status: string): void {
@@ -341,4 +347,92 @@ export class ComposerComponent implements OnInit {
     anchor.href = this.midiService.getUri(midi);
     anchor.click();
   }
+  public composerTour: GuidedTour = {
+    tourId: 'composer-tour',
+    useOrb: false,
+    steps: [
+      // {
+      //   title: 'General page step',
+      //   content: 'We have the concept of general page steps so that a you can introuce a user to a page or non specific instructions',
+      // },
+      {
+        title: 'Global Key / Scale',
+        selector: '.s-key-global',
+        content: 'This setting will determine which notes your data will be mapped to. You can override this setting in individual tracks if you wish.',
+        orientation: Orientation.Bottom
+      },
+      {
+        title: 'Data Input',
+        selector: '.s-data',
+        content: 'Paste the data that you would like to turn into music. This should be a single column of numeric data, separated by line-breaks or commas.<br/><br/>Your data will be "normalized" and mapped to notes based on the key/scale and octaves.',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Instrument',
+        selector: '.s-instrument',
+        content: 'Choose an instrument',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Duration',
+        selector: '.s-duration',
+        content: 'How long should each data/note play? Example: If your tempo is 120 Beats per Minute, a quarter-note lasts exactly 1/2 second.',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Offset',
+        selector: '.s-offset',
+        content: 'This setting will delay the start of the track by the specified duration.',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Merge Repeating Notes',
+        selector: '.s-merge',
+        content: 'Repeating notes can sound... repetative. Make it interesting by merging repeating notes into one longer note.',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Octave Range',
+        selector: '.s-octaves',
+        content: 'Choose a range of octaves that suits your instrument choice and your data. A wider range of octaves allows for more expression - but don\'t get crazy! Most instruments have a limited range of octaves where they sound good.',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Track Modulation',
+        selector: '.s-modulation',
+        content: 'Spice up your performance by using data to change the way the instrument is played. (Applies to MIDI export only)',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Preview Track',
+        selector: '.s-preview-track',
+        content: 'Want to hear what it sounds like? Press play!',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Want to play this on a *real* synthesizer?',
+        selector: '.s-download-midi',
+        content: 'Download this track as a MIDI file and import it into a proper music studio',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Add a new track',
+        selector: '.s-add-track',
+        content: 'Add another data stream / instrument',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Save your song',
+        selector: '.s-save-song',
+        content: 'Backup your data and song.',
+        orientation: Orientation.Top
+      },
+      {
+        title: 'Import data from a CSV file',
+        selector: '.s-import-data',
+        content: 'Have a lot of data? Import it all at once in CSV format.',
+        orientation: Orientation.Top
+      }
+    ]
+  };
 }

@@ -1,8 +1,6 @@
 
 <h2 class="page-title">Composer</h2>
-<h4><a href="/about">What is this?</a></h4>
-<h6>(<a href="https://github.com/jonvandermeulen/spektune">Source code</a>)</h6>
-
+<a (click)="start_tutorial()"><i class="fa fa-info-circle">&nbsp;</i> Tutorial</a>
 <app-example [exampleId]="exampleId"></app-example>
 
 <div class="row">
@@ -11,9 +9,8 @@
             <div class="card-body">
                 <form [formGroup]="composerForm">
                     <h4 class="card-title"><input type="text" class="form-control" formControlName="name" /></h4>
-                    <!-- <h6 class="card-subtitle">Settings</h6> -->
                     <div class="row">
-                        <div class="col-md col-lg">
+                        <div class="col-md col-lg s-key-global">
                             <label for="keyScale">Key/Scale:&nbsp;</label>
                             <br />
                             <select formControlName="keyNote" (change)="keyChange()" class="form-select"
@@ -46,7 +43,7 @@
                             tooltip="MIDI file containing all tracks in this composition.">
                             <i class="fa fa-download"></i><br />Download MIDI</button>
                     </div>
-                    <div class="col-md-2 col-lg-2">
+                    <div class="col-md-2 col-lg-2 s-save-song">
                         <button type="button" class="btn btn-default" (click)="downloadJson()"
                             tooltip="Save this composition in JSON format">
                             <i class="fa fa-download"></i><br />Save</button>
@@ -57,7 +54,7 @@
                             <i class="fa-solid fa-folder-open"></i><br />Load</button>
                         <input type="file" #fileUpload style="display: none" (change)="fileSelected($event)" accept="application/json" />
                     </div>
-                    <div class="col-md col-lg">
+                    <div class="col-md col-lg s-import-data">
                         <button type="file" class="btn btn-default" (click)="csvUpload.click()"
                             tooltip="Import data from CSV">
                             <i class="fa-solid fa-folder-open"></i><br />Import CSV</button>
@@ -99,8 +96,9 @@
                     <app-track [model]="t" (removeTrackEventHandler)="removeTrack($event, i)" 
                         (previewTrackEventHandler)="previewTrack($event, i)"></app-track>
                 </div>
-                <button type="button" class="btn btn-default btn-warning" (click)="addTrack()"><i class="fa fa-plus"></i> Add Track</button>
+                <button type="button" class="btn btn-default btn-warning s-add-track" (click)="addTrack()"><i class="fa fa-plus"></i> Add Track</button>
             </div>
         </div>
     </div>
 </div>
+<ngx-guided-tour></ngx-guided-tour>

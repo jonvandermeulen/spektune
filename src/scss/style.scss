@@ -21,6 +21,9 @@ File: scss
 //This is for the responsive (Required file)
 @import "responsive";
 
+// Guided Tour
+@import './node_modules/ngx-guided-tour/scss/guided-tour-base-theme.scss';
+
 //In This scss you can write your scss
 @import "custom";
 

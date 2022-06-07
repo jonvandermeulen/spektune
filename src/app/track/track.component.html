@@ -7,7 +7,7 @@
                     <br />
                     <input type="text" class="form-control" formControlName="name" />
                 </div>
-                <div class="row" formGroupName="dataForm">
+                <div class="row s-data" formGroupName="dataForm">
                     <div>
                         <label for="dataInput">Data <i class="fa fa-info-circle"
                             tooltip="Data should be a single column of line-break-delimited numbers">&nbsp;</i></label><br />
@@ -17,7 +17,7 @@
             </div>
             <div class="col-md-9 col-lg-9">
                 <div class="row" formGroupName="optionsForm">
-                    <div class="col-md col-lg">
+                    <div class="col-md col-lg s-instrument">
                         <label for="midiInstrument" class="mytooltip tooltip-effect-1">Midi
                             Instrument:&nbsp;<i class="fa fa-exclamation-triangle" tooltip="Experimental: Some DAWs may ignore this, choose something absurdly different, or - shockingly - actually use this instrument."></i></label>
                         <br />
@@ -29,7 +29,7 @@
                             </optgroup>
                         </select>
                     </div>
-                    <div class="col-md col-lg">
+                    <div class="col-md col-lg s-duration">
                         <label for="noteDuration">Note Duration:
                             <i class="fa fa-info-circle" tooltip="Each data point will generate a note of this length.">&nbsp;</i>
                         </label>
@@ -39,7 +39,7 @@
                                 duration.name }} note</option>
                         </select>
                     </div>
-                    <div class="col-md col-lg">
+                    <div class="col-md col-lg s-offset">
                         <label for="offset">Offset:&nbsp;
                             <i class="fa fa-info-circle" tooltip="Causes the track to delay start for the specified duration.<br/><br />Useful for creating more dynamic instrument interactions">&nbsp;</i>
                         </label>
@@ -76,7 +76,7 @@
                                 tooltip="When checked, the 'pedal-down' signal will be on for the entire track, causing each note to play past it's duration. <br /> <br />Recommended for Harp and mallet instruments. <i>Not</i> recommended for strings/piano/synth or any instrument that does not have a reasonable decay.">&nbsp;</i>
                             <i class="fa fa-exclamation-triangle" tooltip="Experimental: you may not hear the results when previewing the track."></i>
                     </div>
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-md-4 col-lg-4 s-merge">
                         <label for="mergeLimit">Merge Repeating Notes:
                             <i class="fa fa-info-circle"
                                 tooltip="Consecutive notes can be merged to create one note of longer duration.">&nbsp;</i>
@@ -93,7 +93,7 @@
 
                 <br />
                 <div class="row" formGroupName="keyForm">
-                    <div class="col-md col-lg">
+                    <div class="col-md col-lg s-key-scale">
                         <label for="keyScale">Key/Scale:&nbsp;</label>
                         <br />
                         <select formControlName="keyNote" (change)="keyChange()" class="form-select" style="width: auto;">
@@ -110,7 +110,7 @@
                             <input type="checkbox" formControlName="useGlobal" (click)="keyChange()" value="true" />&nbsp;Use
                             Global Key/Scale</label>
                     </div>
-                    <div class="col-md col-lg">
+                    <div class="col-md col-lg s-octaves">
                         <label for="octaves">Octaves:&nbsp;</label>
                         <br />
                         <select formControlName="startOctave" (change)="octaveChange()" class="form-select" style="width: auto;">
@@ -140,7 +140,7 @@
         <div *ngFor="let t of model.modulationOptions; let i = index" @fade>
             <app-track-modulation [model]="t" (removeModulationEventHandler)="removeTrackModulation($event, i)"></app-track-modulation>
         </div>
-        <button type="button" class="btn btn-default btn-warning" (click)="addTrackModulation()"><i class="fa fa-plus"></i> Add
+        <button type="button" class="btn btn-default btn-warning s-modulation" (click)="addTrackModulation()"><i class="fa fa-plus"></i> Add
             Modulation</button>
         </div>
         <div class="row">
@@ -148,7 +148,7 @@
                 <br />
                 <div class="row">
                     <div class="col-md col-lg">
-                        <button type="button" class="btn btn-success" (click)="previewTrack()">
+                        <button type="button" class="btn btn-success s-preview-track" (click)="previewTrack()">
                             <span [ngSwitch]="playerState">
                                 <b *ngSwitchCase="'stopped'"><i class="fa fa-play" style="width: auto;">&nbsp;</i>Play</b>
                                 <b *ngSwitchCase="'loading'"><i class="fa fa-stop" style="width: auto;">&nbsp;</i>Loading instrument...</b>
@@ -163,7 +163,7 @@
                             tooltip="Comma-separated data file with: raw_data, normalized_data, pitch_name, pitch_midi, note_on">
                             <i class="fa fa-download">&nbsp;</i>Download CSV</button>
                         &nbsp;
-                        <button type="button" class="btn btn-default" (click)="downloadMidi()"
+                        <button type="button" class="btn btn-default s-download-midi" (click)="downloadMidi()"
                             tooltip="MIDI file containing this track only.">
                             <i class="fa fa-download"></i>Download MIDI</button>
                         &nbsp;&nbsp;

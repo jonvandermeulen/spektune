@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TooltipModule } from '../tooltip';
 import { ExampleComponent } from '../example/example.component';
 import { TrackModulationComponent } from '../track-modulation/track-modulation.component';
+import { GuidedTourModule, GuidedTourService } from 'ngx-guided-tour';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,14 @@ import { TrackModulationComponent } from '../track-modulation/track-modulation.c
     CommonModule,
     ReactiveFormsModule,
     TooltipModule,
+    GuidedTourModule,
   ],
   exports: [
     ComposerComponent
   ],
-  providers: []
+  providers: [
+    GuidedTourService
+  ]
 })
 export class ComposerModule {
 
